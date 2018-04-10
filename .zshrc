@@ -98,8 +98,6 @@ export TERM="xterm-256color"
 
 # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins
 plugins=( \
-    aws \
-    brew \
     docker \
     docker-compose \
     git \
