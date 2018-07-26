@@ -8,7 +8,7 @@ export DEFAULT_USER=`whoami`
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_docker custom_aws time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_aws time)
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
@@ -18,6 +18,10 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=""
 # currently this must be set as string because it's compared against a string :/
 POWERLEVE9K_VCS_HIDE_TAGS="false"
 POWERLEVEL9K_SHOW_CHANGESET="false"
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="015"
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="000"
@@ -78,20 +82,20 @@ POWERLEVEL9K_CUSTOM_DOCKER_BACKGROUND="052"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-CASE_SENSITIVE="true"
-# HYPHEN_INSENSITIVE="true"
+CASE_SENSITIVE="false"
+HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 # export UPDATE_ZSH_DAYS=13
 # DISABLE_LS_COLORS="true"
 # DISABLE_AUTO_TITLE="true"
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 # COMPLETION_WAITING_DOTS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 export EDITOR='vim'
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH="$HOME/bin:/usr/local/opt/gettext/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+export PATH="$HOME/bin:/usr/local/opt/gettext/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/games"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
