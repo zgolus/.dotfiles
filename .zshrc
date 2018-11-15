@@ -8,7 +8,7 @@ export DEFAULT_USER=`whoami`
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status custom_docker custom_aws time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
@@ -78,14 +78,14 @@ POWERLEVEL9K_CUSTOM_DOCKER_BACKGROUND="052"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-CASE_SENSITIVE="true"
-# HYPHEN_INSENSITIVE="true"
+CASE_SENSITIVE="false"
+HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 # export UPDATE_ZSH_DAYS=13
 # DISABLE_LS_COLORS="true"
 # DISABLE_AUTO_TITLE="true"
-# ENABLE_CORRECTION="true"
-# COMPLETION_WAITING_DOTS="true"
+ENABLE_CORRECTION="true"
+COMPLETION_WAITING_DOTS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
 
@@ -341,3 +341,20 @@ alias dphpmetrics="$docker_prefix phpmetrics $@"
 alias dphpdox="$docker_prefix phpdox $@"
 alias dphpunit="$docker_prefix phpunit $@"
 alias dcodecept="$docker_prefix codecept $@"
+
+alias spotify="flatpak run com.spotify.Client"
+alias vlc="flatpak run org.videolan.VLC"
+alias azure="docker run -it -v ${HOME}:/root microsoft/azure-cli"
+
+export PATH=$PATH:/home/zgolus/bin
+
+# alsactl -f ~/.alsa.state restore
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
+export PATH=$PATH:/home/kuba/bin
+
+autoload bashcompinit && bashcompinit
+source '/home/kuba/lib/azure-cli/az.completion'

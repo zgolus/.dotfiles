@@ -16,9 +16,6 @@ if [ ! -d ~/.oh-my-zsh/custom/themes/powerlevel9k ]; then
 	git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 fi
 
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
 
 time=$(date +%s)
 files=( ".vimrc" ".zshrc" )
@@ -34,5 +31,3 @@ for file in "${files[@]}"; do
   fi
   ln -sn $new_file $cur_file
 done
-
-vim +PluginInstall +qall
