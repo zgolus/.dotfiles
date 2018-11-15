@@ -4,7 +4,7 @@ syntax on                             " Enable syntax highlighting
 filetype plugin indent on             " allow plugins to determine indentation
 
 set background=dark
-colorscheme solarized8                " Use solarized dark color scheme
+:silent! colorscheme solarized8       " Use solarized dark color scheme if installed
 
 let mapleader = ","                   " Set leader to ,
 let g:netrw_banner = 0                " disable_banner in filebrowser
