@@ -19,6 +19,10 @@ POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX=""
 POWERLEVE9K_VCS_HIDE_TAGS="false"
 POWERLEVEL9K_SHOW_CHANGESET="false"
 
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="015"
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="000"
 POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND="015"
@@ -91,7 +95,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 export EDITOR='vim'
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH="$HOME/bin:/usr/local/opt/gettext/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+export PATH="$HOME/bin:/usr/local/opt/gettext/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/games"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
