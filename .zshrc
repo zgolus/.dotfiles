@@ -361,4 +361,4 @@ fi
 export PATH=$PATH:/home/kuba/bin
 
 autoload bashcompinit && bashcompinit
-source '/home/kuba/lib/azure-cli/az.completion'
+FILE=/home/kuba/lib/azure-cli/az.completion && test -f $FILE && source $FILE
